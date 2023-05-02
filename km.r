@@ -1,3 +1,16 @@
+###########
+## @Description           a simple kmean clustering function
+## @x                     a matrix of dataframe of input variables to be clustered  
+## @k                     set of initial cluster centers (number of clusters)
+## @e                     positive real number for weighted distance function
+## @niter                 max iterations allowed
+## @nstart                number of random sets of clusters to start algorithm 
+## @return                returns cluster assignments 
+
+############                     
+
+
+
 km <- function(x,k=2L,e=1L,niter=10L,nstart=1L){
     cent <- k
     obs <- length(x[,1])
